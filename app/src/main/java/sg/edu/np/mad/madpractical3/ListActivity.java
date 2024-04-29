@@ -55,7 +55,8 @@ public class ListActivity extends AppCompatActivity {
             }
             public void launchMainActivity() {
                 int randomInt = new Random().nextInt();
-                Intent intent = new Intent(ListActivity.this, MainActivity.class);
+                Intent intent = new Intent(ListActivity.this,
+                        MainActivity.class);
                 intent.putExtra("random_number", randomInt);
                 startActivity(intent);
             }
